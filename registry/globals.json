@@ -91,6 +91,22 @@
       ]
     }
   ],
+  "wallets": [
+    {
+      "name": "Prax",
+      "url": "https://praxwallet.com/",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/penumbra-favicon.png"
+        }
+      ]
+    },
+    {
+      "name": "Zafu",
+      "url": "https://zafu.rotko.net/",
+      "images": []
+    }
+  ],
   "stakingAssetId": {
     "inner": "KeqcLzNx9qSH5+lcJHBB9KNW+YPrBk5dKzvPMiypahA="
   }
