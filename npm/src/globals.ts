@@ -7,10 +7,12 @@ export class RegistryGlobals {
   readonly stakingAssetId: AssetId;
   readonly rpcs: EntityMetadata[];
   readonly frontends: EntityMetadata[];
+  readonly wallets: EntityMetadata[];
 
   constructor(json: JsonGlobals) {
     this.rpcs = json.rpcs;
     this.frontends = json.frontendsV2;
+    this.wallets = json.wallets ?? [];
     this.stakingAssetId = AssetId.fromJson(json.stakingAssetId, { ignoreUnknownFields: true });
   }
 

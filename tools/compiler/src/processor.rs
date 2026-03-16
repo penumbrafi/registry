@@ -59,6 +59,7 @@ pub struct Globals {
     #[deprecated]
     pub frontends: Vec<String>,
     pub frontends_v2: Vec<EntityMetadata>,
+    pub wallets: Vec<EntityMetadata>,
     pub staking_asset_id: Id,
 }
 
@@ -71,6 +72,7 @@ impl TryFrom<GlobalsInput> for Globals {
             rpcs: g.rpcs,
             frontends: g.frontends,
             frontends_v2: g.frontends_v2,
+            wallets: g.wallets,
             staking_asset_id: *STAKING_TOKEN_ASSET_ID,
         })
     }

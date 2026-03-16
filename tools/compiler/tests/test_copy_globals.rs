@@ -29,6 +29,11 @@ fn test_successful_copy() {
             images: vec![],
         }],
         frontends: vec!["http://frontend.zone".to_string()],
+        wallets: vec![EntityMetadata {
+            name: "wallet".to_string(),
+            url: "http://wallet.zone".to_string(),
+            images: vec![],
+        }],
     };
     create_file_with_content(
         temp_input_dir.path(),
@@ -48,6 +53,7 @@ fn test_successful_copy() {
 
     assert_eq!(output_globals.rpcs, globals.rpcs);
     assert_eq!(output_globals.frontends_v2, globals.frontends_v2);
+    assert_eq!(output_globals.wallets, globals.wallets);
     assert_eq!(output_globals.staking_asset_id, *STAKING_TOKEN_ASSET_ID);
 }
 

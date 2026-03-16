@@ -18,6 +18,10 @@ pub struct GlobalsInput {
     #[deprecated]
     pub frontends: Vec<String>,
     pub frontends_v2: Vec<EntityMetadata>,
+    /// Wallet software known to work with this chain. Optional in the input so
+    /// existing chain inputs keep parsing without an edit.
+    #[serde(default)]
+    pub wallets: Vec<EntityMetadata>,
 }
 
 type BaseDenom = String;
