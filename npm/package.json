@@ -1,7 +1,16 @@
 {
-  "name": "@penumbra-labs/registry",
+  "name": "@penumbrafi/registry",
   "version": "12.8.0",
   "description": "Chain and asset registry for Penumbra",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penumbrafi/registry.git",
+    "directory": "npm"
+  },
+  "license": "MIT OR Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
