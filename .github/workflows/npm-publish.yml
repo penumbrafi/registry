@@ -25,10 +25,13 @@ jobs:
         with:
           submodules: true
 
-      # No `version:` input: npm/package.json pins pnpm via `packageManager`,
-      # and passing both makes pnpm/action-setup fail with
-      # "Multiple versions of pnpm specified".
+      # There is no root package.json in this repo, so the action has to be
+      # told where the `packageManager` pin lives; without it the setup fails
+      # with "No pnpm version is specified". Passing `version:` as well would
+      # fail the other way, with "Multiple versions of pnpm specified".
       - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: npm/package.json
 
       - uses: actions/setup-node@v4
         with:
