@@ -27,7 +27,10 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg"
         }
-      ]
+      ],
+      "symbolOverrides": {
+        "uusdc": "USDC"
+      }
     },
     {
       "displayName": "Celestia",
@@ -68,7 +71,8 @@
         "factory/osmo1r53fx9fvcdzncrs7zkn4gw5vfelx5gk8k5wc6wqha2jpkh992rusr5tk02/alloyed/allDOT": "allDOT",
         "factory/osmo1f588gk9dazpsueevdl2w6wfkmfmhg5gdvg2uerdlzl0atkasqhsq59qc6a/alloyed/allSHIB": "allSHIB",
         "factory/osmo1eqjda4pc6e09jtxzxggf6jl3jye2yn453ja58we5gxwzmf5ah28qvlnaz8/alloyed/allUNI": "allUNI",
-        "factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc": "osmoWBTC"
+        "factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc": "osmoWBTC",
+        "factory/osmo147h5x9pcj7lm0cttlaefx6sqq5vdfnmwfcqxkmjd7exqm9gc7grqhr75m0/alloyed/allUSDC": "allUSDC"
       }
     },
     {
@@ -88,19 +92,21 @@
     {
       "displayName": "Injective Finance",
       "chainId": "injective-1",
-      "channelId": "channel-15",
-      "counterpartyChannelId": "channel-434",
+      "channelId": "channel-18",
+      "counterpartyChannelId": "channel-494",
       "addressPrefix": "inj",
       "cosmosRegistryDir": "injective",
       "images": [
         {
-          "png": "https://github.com/cosmos/chain-registry/blob/6af926f1580b481656f9c69b3d2a11674b66b398/injective/images/inj.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/refs/heads/master/injective/images/inj.svg"
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png",
+          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg"
         }
       ],
       "symbolOverrides": {
         "cw20:inj19vy83ne9tzta2yqynj8yg7dq9ghca6yqn9hyej": "DRUGS.cw20",
-        "factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS": "DRUGS.factory"
+        "factory/inj178zy7myyxewek7ka7v9hru8ycpvfnen6xeps89/DRUGS": "DRUGS.factory",
+        "cw20:inj18luqttqyckgpddndh8hvaq25d5nfwjc78m56lc": "hINJ.cw20",
+        "factory/inj14ejqjyq8um4p3xfqj74yld5waqljf88f9eneuk/inj18luqttqyckgpddndh8hvaq25d5nfwjc78m56lc": "hINJ.factory"
       }
     },
     {
@@ -334,6 +340,22 @@
     {
       "base": "transfer/channel-2/ausdy",
       "coingeckoId": "ondo-us-dollar-yield"
+    },
+    {
+      "base": "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "coingeckoId": "usd-coin"
+    },
+    {
+      "base": "transfer/channel-18/factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd",
+      "coingeckoId": "agora-dollar"
+    },
+    {
+      "base": "transfer/channel-18/peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "coingeckoId": "tether"
+    },
+    {
+      "base": "transfer/channel-18/inj",
+      "coingeckoId": "injective-protocol"
     }
   ],
   "canonicalNumeraires": [
@@ -357,7 +379,11 @@
     "transfer/channel-4/factory/osmo1nufyzqlm8qhu2w7lm0l4rrax0ec8rsk69mga4tel8eare7c7ljaqpk2lyg/alloyed/allOP": 500000000000,
     "transfer/channel-4/factory/osmo1f588gk9dazpsueevdl2w6wfkmfmhg5gdvg2uerdlzl0atkasqhsq59qc6a/alloyed/allSHIB": 500000000000,
     "transfer/channel-4/factory/osmo14mafhhp337yjj2aujplawz0tks6jd2lel4hkwz4agyzhvvztzaqsqzjq8x/alloyed/allTRX": 400000000000,
-    "transfer/channel-4/factory/osmo12lnwf54yd30p6amzaged2atln8k0l32n7ncxf04ctg7u7ymnsy7qkqgsw4/alloyed/allTON": 400000000000
+    "transfer/channel-4/factory/osmo12lnwf54yd30p6amzaged2atln8k0l32n7ncxf04ctg7u7ymnsy7qkqgsw4/alloyed/allTON": 400000000000,
+    "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a": 700000000000,
+    "transfer/channel-18/peggy0xdAC17F958D2ee523a2206206994597C13D831ec7": 600000000000,
+    "transfer/channel-18/inj": 600000000000,
+    "transfer/channel-18/factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd": 500000000000
   },
   "badges": {
     "osmosis": {
