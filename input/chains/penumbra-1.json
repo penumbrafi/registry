@@ -27,7 +27,10 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg"
         }
-      ]
+      ],
+      "symbolOverrides": {
+        "uusdc": "USDC"
+      }
     },
     {
       "displayName": "Celestia",
@@ -68,7 +71,8 @@
         "factory/osmo1r53fx9fvcdzncrs7zkn4gw5vfelx5gk8k5wc6wqha2jpkh992rusr5tk02/alloyed/allDOT": "allDOT",
         "factory/osmo1f588gk9dazpsueevdl2w6wfkmfmhg5gdvg2uerdlzl0atkasqhsq59qc6a/alloyed/allSHIB": "allSHIB",
         "factory/osmo1eqjda4pc6e09jtxzxggf6jl3jye2yn453ja58we5gxwzmf5ah28qvlnaz8/alloyed/allUNI": "allUNI",
-        "factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc": "osmoWBTC"
+        "factory/osmo1z0qrq605sjgcqpylfl4aa6s90x738j7m58wyatt0tdzflg2ha26q67k743/wbtc": "osmoWBTC",
+        "factory/osmo147h5x9pcj7lm0cttlaefx6sqq5vdfnmwfcqxkmjd7exqm9gc7grqhr75m0/alloyed/allUSDC": "allUSDC"
       }
     },
     {
@@ -88,8 +92,8 @@
     {
       "displayName": "Injective Finance",
       "chainId": "injective-1",
-      "channelId": "<PENUMBRA_CHANNEL_ID>",
-      "counterpartyChannelId": "<INJECTIVE_CHANNEL_ID>",
+      "channelId": "channel-18",
+      "counterpartyChannelId": "channel-494",
       "addressPrefix": "inj",
       "cosmosRegistryDir": "injective",
       "images": [
@@ -338,19 +342,19 @@
       "coingeckoId": "ondo-us-dollar-yield"
     },
     {
-      "base": "transfer/<PENUMBRA_CHANNEL_ID>/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
+      "base": "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
       "coingeckoId": "usd-coin"
     },
     {
-      "base": "transfer/<PENUMBRA_CHANNEL_ID>/factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd",
+      "base": "transfer/channel-18/factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd",
       "coingeckoId": "agora-dollar"
     },
     {
-      "base": "transfer/<PENUMBRA_CHANNEL_ID>/peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "base": "transfer/channel-18/peggy0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "coingeckoId": "tether"
     },
     {
-      "base": "transfer/<PENUMBRA_CHANNEL_ID>/inj",
+      "base": "transfer/channel-18/inj",
       "coingeckoId": "injective-protocol"
     }
   ],
@@ -376,10 +380,10 @@
     "transfer/channel-4/factory/osmo1f588gk9dazpsueevdl2w6wfkmfmhg5gdvg2uerdlzl0atkasqhsq59qc6a/alloyed/allSHIB": 500000000000,
     "transfer/channel-4/factory/osmo14mafhhp337yjj2aujplawz0tks6jd2lel4hkwz4agyzhvvztzaqsqzjq8x/alloyed/allTRX": 400000000000,
     "transfer/channel-4/factory/osmo12lnwf54yd30p6amzaged2atln8k0l32n7ncxf04ctg7u7ymnsy7qkqgsw4/alloyed/allTON": 400000000000,
-    "transfer/<PENUMBRA_CHANNEL_ID>/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a": 700000000000,
-    "transfer/<PENUMBRA_CHANNEL_ID>/peggy0xdAC17F958D2ee523a2206206994597C13D831ec7": 600000000000,
-    "transfer/<PENUMBRA_CHANNEL_ID>/inj": 600000000000,
-    "transfer/<PENUMBRA_CHANNEL_ID>/factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd": 500000000000
+    "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a": 700000000000,
+    "transfer/channel-18/peggy0xdAC17F958D2ee523a2206206994597C13D831ec7": 600000000000,
+    "transfer/channel-18/inj": 600000000000,
+    "transfer/channel-18/factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd": 500000000000
   },
   "badges": {
     "osmosis": {

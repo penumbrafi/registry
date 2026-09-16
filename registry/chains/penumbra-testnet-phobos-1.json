@@ -129,7 +129,7 @@
       "base": "transfer/channel-1/uusdc",
       "display": "transfer/channel-1/usdc",
       "name": "USD Coin",
-      "symbol": "USDC",
+      "symbol": "USDC.n",
       "penumbraAssetId": {
         "inner": "J0fi/vGPSy8XmGGzU+rtpPxHirechCzuPf23cnZ5FgA="
       },
@@ -138,8 +138,7 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg",
           "theme": {
-            "primaryColorHex": "#2775CA",
-            "circle": true
+            "primaryColorHex": "#2474cb"
           }
         }
       ],
@@ -407,7 +406,6 @@
       "images": [
         {
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.png",
-          "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/osmosistestnet/images/willyz.svg",
           "theme": {
             "primaryColorHex": "#e4bc82"
           }
