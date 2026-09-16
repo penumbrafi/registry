@@ -13,7 +13,7 @@ export interface GithubRegistryResponse {
 }
 
 export const REGISTRY_BASE_URL =
-  'https://raw.githubusercontent.com/prax-wallet/registry/main/registry';
+  'https://raw.githubusercontent.com/penumbrafi/registry/main/registry';
 
 type ChainId = string;
 

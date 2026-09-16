@@ -1,4 +1,6 @@
-# @penumbra-labs/registry
+# @penumbrafi/registry
+
+> Published as `@penumbra-labs/registry` up to and including 12.8.0.
 
 ## 12.8.0
 
