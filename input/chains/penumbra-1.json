@@ -46,8 +46,8 @@
     {
       "displayName": "Osmosis",
       "chainId": "osmosis-1",
-      "channelId": "channel-4",
-      "counterpartyChannelId": "channel-79703",
+      "channelId": "channel-17",
+      "counterpartyChannelId": "channel-110473",
       "addressPrefix": "osmo",
       "cosmosRegistryDir": "osmosis",
       "images": [
