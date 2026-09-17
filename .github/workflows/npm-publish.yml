@@ -13,8 +13,23 @@ permissions:
   pull-requests: write
 
 jobs:
+  # `secrets` cannot be evaluated in a job-level `if`, so the presence of
+  # NPM_TOKEN is turned into a plain job output first. Until the npm scope
+  # exists and a token is configured, the publish job is skipped rather than
+  # failing every push to main.
+  gate:
+    name: Check for npm credentials
+    runs-on: ubuntu-latest
+    outputs:
+      has_token: ${{ steps.check.outputs.has_token }}
+    steps:
+      - id: check
+        run: echo "has_token=${{ secrets.NPM_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
+
   publish:
     name: Publish to npm
+    needs: gate
+    if: needs.gate.outputs.has_token == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:

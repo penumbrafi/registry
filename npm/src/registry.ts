@@ -10,6 +10,8 @@ type Stringified<T> = string;
 
 export type Base64AssetId = Stringified<AssetId['inner']>;
 
+export type ConnectionStatus = 'active' | 'expired';
+
 export interface Chain {
   addressPrefix: string;
   chainId: string;
@@ -17,6 +19,13 @@ export interface Chain {
   counterpartyChannelId: string;
   images: Image[];
   displayName: string;
+  /**
+   * Liveness of the connection as last observed on chain. `'expired'` means the
+   * channel cannot currently carry a transfer, usually because the counterparty
+   * light client has expired, and clients should hide or disable it. Absent when
+   * the connection has not been classified.
+   */
+  status?: ConnectionStatus;
 }
 
 export interface EntityMetadata {

@@ -13,7 +13,7 @@ describe('Registry', () => {
     // TODO: Renable when badges fixed in minifront
     // expect(res.badges.length).toEqual(1);
     // expect(res.badges[0]?.png).toEqual(
-    //   'https://raw.githubusercontent.com/prax-wallet/registry/main/images/penumbra-favicon.png',
+    //   'https://raw.githubusercontent.com/penumbrafi/registry/main/images/penumbra-favicon.png',
     // );
   });
 

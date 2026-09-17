@@ -49,7 +49,7 @@
       },
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/penumbra-favicon.png",
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/penumbra-favicon.png",
           "theme": {
             "primaryColorHex": "#1d1e1d"
           }
@@ -108,7 +108,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/full-moon-face.svg",
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/full-moon-face.svg",
           "theme": {
             "primaryColorHex": "#ac9454"
           }
@@ -196,7 +196,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/um.svg",
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/um.svg",
           "theme": {
             "primaryColorHex": "#c9a975"
           }
@@ -312,7 +312,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/pizza.svg",
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/pizza.svg",
           "theme": {
             "primaryColorHex": "#ab1221"
           }
@@ -341,7 +341,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/new-moon-face.svg",
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/new-moon-face.svg",
           "theme": {
             "primaryColorHex": "#546068"
           }
@@ -430,7 +430,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/test-usd.svg",
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/test-usd.svg",
           "theme": {
             "primaryColorHex": "#14833b"
           }

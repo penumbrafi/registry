@@ -56,6 +56,20 @@ pub struct EntityMetadata {
     pub images: Vec<AssetImage>,
 }
 
+/// Liveness of an IBC connection, as observed on chain.
+///
+/// `Active` means the channel is open and its light client is live; `Expired`
+/// means the channel cannot currently carry a transfer, usually because the
+/// counterparty light client has expired. The field is optional everywhere: a
+/// connection with no `status` is simply unclassified, which is how every
+/// connection behaved before this field existed.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]
+#[serde(rename_all = "lowercase")]
+pub enum ConnectionStatus {
+    Active,
+    Expired,
+}
+
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct IbcInput {
@@ -68,6 +82,8 @@ pub struct IbcInput {
     pub images: Vec<AssetImage>,
     #[serde(default)]
     pub symbol_overrides: HashMap<String, String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub status: Option<ConnectionStatus>,
 }
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]

@@ -5,7 +5,7 @@
       "url": "https://penumbra-1.radiantcommons.com",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/radiant-emblem-light.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/radiant-emblem-light.png"
         }
       ]
     },
@@ -14,7 +14,7 @@
       "url": "https://penumbra.crouton.digital",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/crouton-digital.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/crouton-digital.png"
         }
       ]
     },
@@ -23,7 +23,7 @@
       "url": "https://grpc.penumbra.silentvalidator.com",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/silent-validator.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/silent-validator.png"
         }
       ]
     },
@@ -32,7 +32,7 @@
       "url": "https://penumbra.grpc.ghostinnet.com",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/ghostinnet.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/ghostinnet.png"
         }
       ]
     }
@@ -50,7 +50,7 @@
       "url": "https://stake.with.starlingcyber.net",
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/starling-cybernetics.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/starling-cybernetics.svg"
         }
       ]
     },
@@ -59,7 +59,7 @@
       "url": "https://penumbra.whispernode.com",
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/whisper-node.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/whisper-node.svg"
         }
       ]
     },
@@ -68,7 +68,7 @@
       "url": "https://voids.cloud",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/22a435.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/22a435.png"
         }
       ]
     },
@@ -77,7 +77,7 @@
       "url": "https://penumbra.zechub.org",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/zec-hub.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/zec-hub.png"
         }
       ]
     },
@@ -86,7 +86,7 @@
       "url": "https://app.penumbra.zone",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/radiant-emblem-light.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/radiant-emblem-light.png"
         }
       ]
     }
