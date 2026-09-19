@@ -1,0 +1,18 @@
+{
+  "name": "@penumbra-labs/registry",
+  "version": "13.1.0",
+  "description": "Community release branch of the Penumbra chain/asset registry, published from github.com/penumbrafi/registry. Root-level shim that lets pnpm/npm/bun consume this repository via `github:penumbrafi/registry#rotko-release` without a nested `npm/` subpath install. The package keeps the name `@penumbra-labs/registry` so existing imports and `@penumbra-zone/*` peer ranges resolve unchanged; the real sources live in `./npm`, whose prebuilt `dist/` is committed here so a git install needs no build step.",
+  "main": "./npm/dist/index.js",
+  "module": "./npm/dist/index.mjs",
+  "types": "./npm/dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "npm/dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penumbrafi/registry.git"
+  },
+  "license": "MIT",
+  "private": false
+}
