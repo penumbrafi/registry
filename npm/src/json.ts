@@ -17,6 +17,8 @@ export interface JsonGlobals {
   /** @deprecated use `frontendsV2` instead */
   frontends: string[];
   frontendsV2: EntityMetadata[];
+  /** Absent from registry data generated before wallets were tracked. */
+  wallets?: EntityMetadata[];
   stakingAssetId: { inner: string };
 }
 
