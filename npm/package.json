@@ -1,6 +1,6 @@
 {
   "name": "@penumbrafi/registry",
-  "version": "12.8.0",
+  "version": "13.0.0",
   "description": "Chain and asset registry for Penumbra",
   "repository": {
     "type": "git",
