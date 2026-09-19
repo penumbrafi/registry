@@ -7,8 +7,8 @@ use tracing::instrument;
 use crate::assetlist_schema::{AssetList, AssetTypeAsset};
 use crate::error::{AppError, AppResult};
 use crate::parser::{
-    copy_globals, get_chain_configs, reset_registry_dir, ChainConfig, EntityMetadata, GlobalsInput,
-    IbcInput, LOCAL_INPUT_DIR, LOCAL_REGISTRY_DIR,
+    copy_globals, get_chain_configs, reset_registry_dir, ChainConfig, ConnectionStatus,
+    EntityMetadata, GlobalsInput, IbcInput, LOCAL_INPUT_DIR, LOCAL_REGISTRY_DIR,
 };
 use crate::validator::generate_metadata_from_validators;
 use color_thief::{Color, ColorFormat};
@@ -37,6 +37,8 @@ pub struct Chain {
     pub counterparty_channel_id: String,
     pub display_name: String,
     pub images: Vec<AssetImage>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub status: Option<ConnectionStatus>,
 }
 
 impl From<IbcInput> for Chain {
@@ -48,6 +50,7 @@ impl From<IbcInput> for Chain {
             counterparty_channel_id: config.counterparty_channel_id,
             display_name: config.display_name,
             images: config.images,
+            status: config.status,
         }
     }
 }

@@ -6,6 +6,7 @@
       "chainId": "cosmoshub-4",
       "channelId": "channel-0",
       "counterpartyChannelId": "channel-940",
+      "status": "expired",
       "addressPrefix": "cosmos",
       "cosmosRegistryDir": "cosmoshub",
       "images": [
@@ -20,6 +21,7 @@
       "chainId": "noble-1",
       "channelId": "channel-2",
       "counterpartyChannelId": "channel-89",
+      "status": "active",
       "addressPrefix": "noble",
       "cosmosRegistryDir": "noble",
       "images": [
@@ -37,6 +39,7 @@
       "chainId": "celestia",
       "channelId": "channel-3",
       "counterpartyChannelId": "channel-35",
+      "status": "expired",
       "addressPrefix": "celestia",
       "cosmosRegistryDir": "celestia",
       "images": [
@@ -51,6 +54,7 @@
       "chainId": "osmosis-1",
       "channelId": "channel-4",
       "counterpartyChannelId": "channel-79703",
+      "status": "expired",
       "addressPrefix": "osmo",
       "cosmosRegistryDir": "osmosis",
       "images": [
@@ -80,6 +84,7 @@
       "chainId": "dxdy-mainnet-1",
       "channelId": "channel-16",
       "counterpartyChannelId": "channel-89",
+      "status": "expired",
       "addressPrefix": "dydx",
       "cosmosRegistryDir": "dydx",
       "images": [
@@ -94,6 +99,7 @@
       "chainId": "injective-1",
       "channelId": "channel-18",
       "counterpartyChannelId": "channel-494",
+      "status": "active",
       "addressPrefix": "inj",
       "cosmosRegistryDir": "injective",
       "images": [
@@ -114,6 +120,7 @@
       "chainId": "stride-1",
       "channelId": "channel-8",
       "counterpartyChannelId": "channel-307",
+      "status": "expired",
       "addressPrefix": "stride",
       "cosmosRegistryDir": "stride",
       "images": [
@@ -128,6 +135,7 @@
       "chainId": "neutron-1",
       "channelId": "channel-9",
       "counterpartyChannelId": "channel-6560",
+      "status": "expired",
       "addressPrefix": "neutron",
       "cosmosRegistryDir": "neutron",
       "images": [
@@ -145,6 +153,7 @@
       "chainId": "axelar-dojo-1",
       "channelId": "channel-7",
       "counterpartyChannelId": "channel-171",
+      "status": "expired",
       "addressPrefix": "axelar",
       "cosmosRegistryDir": "axelar",
       "images": [
@@ -203,7 +212,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/um.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/um.svg"
         }
       ]
     }
@@ -359,6 +368,7 @@
     }
   ],
   "canonicalNumeraires": [
+    "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
     "transfer/channel-2/uusdc"
   ],
   "priorityScoresByBase": {
@@ -380,7 +390,7 @@
     "transfer/channel-4/factory/osmo1f588gk9dazpsueevdl2w6wfkmfmhg5gdvg2uerdlzl0atkasqhsq59qc6a/alloyed/allSHIB": 500000000000,
     "transfer/channel-4/factory/osmo14mafhhp337yjj2aujplawz0tks6jd2lel4hkwz4agyzhvvztzaqsqzjq8x/alloyed/allTRX": 400000000000,
     "transfer/channel-4/factory/osmo12lnwf54yd30p6amzaged2atln8k0l32n7ncxf04ctg7u7ymnsy7qkqgsw4/alloyed/allTON": 400000000000,
-    "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a": 700000000000,
+    "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a": 800000000101,
     "transfer/channel-18/peggy0xdAC17F958D2ee523a2206206994597C13D831ec7": 600000000000,
     "transfer/channel-18/inj": 600000000000,
     "transfer/channel-18/factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd": 500000000000

@@ -34,7 +34,7 @@
       "base": "udelegation_penumbravalid1d3c0v5phydt7vdakajzxpw0mev7jcgurk7eeuw6z4cqqks2wxyrqu72gau",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/penumbra-favicon.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/penumbra-favicon.png"
         }
       ]
     }
@@ -64,7 +64,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/um.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/um.svg"
         }
       ]
     },
@@ -90,7 +90,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/full-moon-face.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/full-moon-face.svg"
         }
       ]
     },
@@ -116,7 +116,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/new-moon-face.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/new-moon-face.svg"
         }
       ]
     },
@@ -138,7 +138,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/test-usd.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/test-usd.svg"
         }
       ]
     },
@@ -169,7 +169,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/pizza.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/pizza.svg"
         }
       ]
     },
@@ -257,7 +257,7 @@
   "priorityScoresByBase": {},
   "badges": {
     "penumbra": {
-      "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/penumbra-favicon.png"
+      "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/penumbra-favicon.png"
     }
   },
   "badgesByBase": {}

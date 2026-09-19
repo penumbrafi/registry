@@ -34,7 +34,7 @@
       "base": "udelegation_penumbravalid1se8jfzt5waklmknkkl2aqv8wk95yekd22rm2lg8xxay2fgddagxsjg44g4",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/penumbra-favicon.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/penumbra-favicon.png"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "base": "udelegation_penumbravalid1ygs8uns7dw0wxej5ujt87qv3dua7ksnc56l2uvxt8a4lvqcm75gsstqp2e",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/penumbra-favicon.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/penumbra-favicon.png"
         }
       ]
     }
@@ -73,7 +73,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/um.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/um.svg"
         }
       ]
     },
@@ -99,7 +99,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/full-moon-face.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/full-moon-face.svg"
         }
       ]
     },
@@ -125,7 +125,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/new-moon-face.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/new-moon-face.svg"
         }
       ]
     },
@@ -147,7 +147,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/test-usd.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/test-usd.svg"
         }
       ]
     },
@@ -178,7 +178,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/pizza.svg"
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/pizza.svg"
         }
       ]
     },

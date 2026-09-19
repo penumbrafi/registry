@@ -12,7 +12,8 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg"
         }
-      ]
+      ],
+      "status": "expired"
     },
     {
       "addressPrefix": "noble",
@@ -25,7 +26,8 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg"
         }
-      ]
+      ],
+      "status": "active"
     },
     {
       "addressPrefix": "celestia",
@@ -38,7 +40,8 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg"
         }
-      ]
+      ],
+      "status": "expired"
     },
     {
       "addressPrefix": "osmo",
@@ -51,7 +54,8 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg"
         }
-      ]
+      ],
+      "status": "expired"
     },
     {
       "addressPrefix": "dydx",
@@ -64,7 +68,8 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.svg"
         }
-      ]
+      ],
+      "status": "expired"
     },
     {
       "addressPrefix": "inj",
@@ -77,7 +82,8 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/inj.svg"
         }
-      ]
+      ],
+      "status": "active"
     },
     {
       "addressPrefix": "stride",
@@ -90,7 +96,8 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/strd.svg"
         }
-      ]
+      ],
+      "status": "expired"
     },
     {
       "addressPrefix": "neutron",
@@ -103,7 +110,8 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/neutron/images/neutron.svg"
         }
-      ]
+      ],
+      "status": "expired"
     },
     {
       "addressPrefix": "axelar",
@@ -116,7 +124,8 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.png",
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axl.svg"
         }
-      ]
+      ],
+      "status": "expired"
     }
   ],
   "assetById": {
@@ -427,7 +436,7 @@
           }
         }
       ],
-      "priorityScore": "700000000000",
+      "priorityScore": "800000000101",
       "coingeckoId": "usd-coin"
     },
     "1KnnW2hZa5VOGRlXSDgexDY72QOjuWa2if43is7ldwE=": {
@@ -2556,7 +2565,7 @@
       },
       "images": [
         {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/um.svg",
+          "svg": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/um.svg",
           "theme": {
             "primaryColorHex": "#c9a975"
           }
@@ -7688,6 +7697,7 @@
     }
   },
   "numeraires": [
-    "drPksQaBNYwSOzgfkGOEdrd4kEDkeALeh58Ps+7cjQs="
+    "drPksQaBNYwSOzgfkGOEdrd4kEDkeALeh58Ps+7cjQs=",
+    "16ztCNRCyQZYu3cNN7DNMevUt0v2pERpUBflNfwP+wc="
   ]
 }

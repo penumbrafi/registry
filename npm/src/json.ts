@@ -53,10 +53,18 @@ interface Image {
   };
 }
 
+/**
+ * JSON module imports widen string literals to `string`, so a bundled registry
+ * whose connections carry `"status": "active"` does not structurally match
+ * `Chain['status']`. These files are written only by the generator, whose Rust
+ * types constrain the value to the same union, so narrowing here is safe.
+ */
+const asJsonRegistry = (json: unknown): JsonRegistry => json as JsonRegistry;
+
 export const allJsonRegistries: Record<string, JsonRegistry> = {
-  'penumbra-testnet-deimos-8-x6de97e39': Deimos8,
-  'penumbra-1': Penumbra1,
-  'penumbra-testnet-phobos-1': Phobos1,
-  'penumbra-testnet-phobos-2': Phobos2,
-  'penumbra-testnet-phobos-3': Phobos3,
+  'penumbra-testnet-deimos-8-x6de97e39': asJsonRegistry(Deimos8),
+  'penumbra-1': asJsonRegistry(Penumbra1),
+  'penumbra-testnet-phobos-1': asJsonRegistry(Phobos1),
+  'penumbra-testnet-phobos-2': asJsonRegistry(Phobos2),
+  'penumbra-testnet-phobos-3': asJsonRegistry(Phobos3),
 };

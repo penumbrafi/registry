@@ -1,92 +1,40 @@
 {
   "rpcs": [
     {
-      "name": "Radiant Commons",
-      "url": "https://penumbra-1.radiantcommons.com",
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/radiant-emblem-light.png"
-        }
-      ]
-    },
-    {
-      "name": "CroutonDigital",
-      "url": "https://penumbra.crouton.digital",
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/crouton-digital.png"
-        }
-      ]
-    },
-    {
-      "name": "Silent Validator",
-      "url": "https://grpc.penumbra.silentvalidator.com",
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/silent-validator.png"
-        }
-      ]
-    },
-    {
       "name": "ghostinnet",
       "url": "https://penumbra.grpc.ghostinnet.com",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/ghostinnet.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/ghostinnet.png"
         }
       ]
+    },
+    {
+      "name": "Rotko Networks",
+      "url": "https://penumbra.rotko.net",
+      "images": []
+    },
+    {
+      "name": "Validatus",
+      "url": "https://grpc.penumbra.validatus.com",
+      "images": []
+    },
+    {
+      "name": "Bryanlabs",
+      "url": "https://penumbra.bryanlabs.net",
+      "images": []
     }
   ],
   "frontends": [
-    "https://stake.with.starlingcyber.net",
-    "https://penumbra.whispernode.com",
-    "https://voids.cloud",
-    "https://penumbra.zechub.org",
-    "https://app.penumbra.zone"
+    "https://penumbra.zechub.org"
   ],
   "frontendsV2": [
-    {
-      "name": "Starling Cybernetics",
-      "url": "https://stake.with.starlingcyber.net",
-      "images": [
-        {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/starling-cybernetics.svg"
-        }
-      ]
-    },
-    {
-      "name": "Whisper Node",
-      "url": "https://penumbra.whispernode.com",
-      "images": [
-        {
-          "svg": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/whisper-node.svg"
-        }
-      ]
-    },
-    {
-      "name": "⊤⊥",
-      "url": "https://voids.cloud",
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/22a435.png"
-        }
-      ]
-    },
     {
       "name": "ZecHub",
       "url": "https://penumbra.zechub.org",
       "images": [
         {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/zec-hub.png"
-        }
-      ]
-    },
-    {
-      "name": "Radiant Commons",
-      "url": "https://app.penumbra.zone",
-      "images": [
-        {
-          "png": "https://raw.githubusercontent.com/prax-wallet/registry/main/images/radiant-emblem-light.png"
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/zec-hub.png"
         }
       ]
     }

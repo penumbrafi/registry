@@ -32,6 +32,7 @@ fn test_transport_metadata_along_channel() {
         display_name: "Strangelove".to_string(),
         images: vec![],
         symbol_overrides: HashMap::new(),
+        status: None,
     };
 
     let input_json = r#"
