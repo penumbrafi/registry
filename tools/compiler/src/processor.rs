@@ -366,14 +366,18 @@ fn process_chain_config(chain_config: ChainConfig) -> AppResult<Registry> {
                 Ok((id, m))
             })
             .collect::<AppResult<_>>()?,
-        numeraires: all_metadata
-            .into_iter()
-            .filter(|metadata| {
-                chain_config
-                    .canonical_numeraires
-                    .contains(&metadata.base_denom().denom)
+        // Ordered by `canonicalNumeraires`, not by asset order: clients that take
+        // the first numeraire as their default quote asset must get the one the
+        // input actually lists first.
+        numeraires: chain_config
+            .canonical_numeraires
+            .iter()
+            .filter_map(|denom| {
+                all_metadata
+                    .iter()
+                    .find(|metadata| metadata.base_denom().denom == *denom)
+                    .and_then(|m| base64_id(&m.id()).ok())
             })
-            .filter_map(|m| base64_id(&m.id()).ok())
             .collect(),
     };
 
