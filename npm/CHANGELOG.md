@@ -1,5 +1,26 @@
 # @penumbrafi/registry
 
+## 13.1.1
+
+### Patch Changes
+
+- ba9918a: Order `numeraires` by `canonicalNumeraires` instead of by asset order.
+
+  The compiler built the numeraire list by filtering all assets, so output order
+  followed the asset list rather than the order the chain input declares. A client
+  that takes the first numeraire as its default quote asset therefore got an
+  arbitrary one. It now follows `canonicalNumeraires` directly, making
+  `USDC.inj` the first numeraire on `penumbra-1` ahead of Noble USDC.
+
+  Only `penumbra-1` changes; every testnet output is byte-identical.
+
+- d73f94a: List the Rotko RPC as `rpc.penumbra.fi` rather than `penumbra.rotko.net`.
+
+  Both names resolve to the same node (same address, moniker
+  `penumbra-03.ct.rotko.net`), so this changes the published hostname only. The
+  project-branded name does not tie the endpoint to an operator domain if the
+  node moves.
+
 ## 13.1.0
 
 ### Minor Changes
