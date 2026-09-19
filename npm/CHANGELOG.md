@@ -1,5 +1,12 @@
 # @penumbrafi/registry
 
+## 13.0.0
+
+### Major Changes
+
+- Republish under the `@penumbrafi` scope and read the registry data from `raw.githubusercontent.com/penumbrafi/registry/main/registry`. Previously published as `@penumbra-labs/registry` up to and including 12.8.0; the API is unchanged.
+
+
 > Published as `@penumbra-labs/registry` up to and including 12.8.0.
 
 ## 12.8.0
