@@ -368,6 +368,7 @@
     }
   ],
   "canonicalNumeraires": [
+    "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a",
     "transfer/channel-2/uusdc"
   ],
   "priorityScoresByBase": {
@@ -389,7 +390,7 @@
     "transfer/channel-4/factory/osmo1f588gk9dazpsueevdl2w6wfkmfmhg5gdvg2uerdlzl0atkasqhsq59qc6a/alloyed/allSHIB": 500000000000,
     "transfer/channel-4/factory/osmo14mafhhp337yjj2aujplawz0tks6jd2lel4hkwz4agyzhvvztzaqsqzjq8x/alloyed/allTRX": 400000000000,
     "transfer/channel-4/factory/osmo12lnwf54yd30p6amzaged2atln8k0l32n7ncxf04ctg7u7ymnsy7qkqgsw4/alloyed/allTON": 400000000000,
-    "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a": 700000000000,
+    "transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a": 800000000101,
     "transfer/channel-18/peggy0xdAC17F958D2ee523a2206206994597C13D831ec7": 600000000000,
     "transfer/channel-18/inj": 600000000000,
     "transfer/channel-18/factory/inj1n636d9gzrqggdk66n2f97th0x8yuhfrtx520e7/ausd": 500000000000

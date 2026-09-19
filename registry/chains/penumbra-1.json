@@ -436,7 +436,7 @@
           }
         }
       ],
-      "priorityScore": "700000000000",
+      "priorityScore": "800000000101",
       "coingeckoId": "usd-coin"
     },
     "1KnnW2hZa5VOGRlXSDgexDY72QOjuWa2if43is7ldwE=": {
@@ -7697,6 +7697,7 @@
     }
   },
   "numeraires": [
-    "drPksQaBNYwSOzgfkGOEdrd4kEDkeALeh58Ps+7cjQs="
+    "drPksQaBNYwSOzgfkGOEdrd4kEDkeALeh58Ps+7cjQs=",
+    "16ztCNRCyQZYu3cNN7DNMevUt0v2pERpUBflNfwP+wc="
   ]
 }
