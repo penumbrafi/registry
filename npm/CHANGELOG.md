@@ -1,5 +1,44 @@
 # @penumbrafi/registry
 
+## 13.1.0
+
+### Minor Changes
+
+- 848fb27: Add an optional `status` field to IBC connections. `Chain.status` is
+  `'active' | 'expired' | undefined` and records whether a connection can
+  currently carry a transfer; `'expired'` normally means the counterparty light
+  client has expired. Clients can use it to hide or disable a channel instead of
+  offering a withdrawal that will never arrive. The field is optional and purely
+  additive, so consumers that ignore it are unaffected.
+- 4ad0b4d: Add a `wallets` list to globals. `RegistryGlobals` now exposes
+  `wallets: EntityMetadata[]`, populated from the new `wallets` array in
+  `registry/globals.json`, so clients can present the wallet software that works
+  with the chain the same way they already present RPCs and frontends. The field
+  is optional in the JSON, so older registry data still parses (`wallets` is then
+  an empty array).
+
+### Patch Changes
+
+- 848fb27: Refresh `globals.json` endpoints and promote `USDC.inj` to a numeraire.
+
+  Eight of the nine endpoints previously listed in `globals.json` were dead. The
+  `rpcs` list now carries only endpoints verified to serve pd gRPC on
+  `penumbra-1` at chain tip (ghostinnet, Rotko Networks, Validatus, Bryanlabs),
+  and `frontends`/`frontendsV2` carry only `penumbra.zechub.org`. Removed:
+  Radiant Commons (`penumbra-1.radiantcommons.com` now serves a certificate for
+  an unrelated domain, and `app.penumbra.zone` returns a disabled deployment),
+  CroutonDigital and Silent Validator (connection refused), Starling Cybernetics
+  (certificate does not match host), Whisper Node and voids.cloud (NXDOMAIN).
+
+  `transfer/channel-18/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a`
+  (`USDC.inj`) is added to `canonicalNumeraires` and its priority score raised
+  above Noble USDC, so Injective USDC ranks as the preferred quote asset ahead of
+  Circle's deprecation of USDC on Noble. Noble USDC remains a numeraire until
+  that rail actually closes.
+
+  Data-only: no API change, and consumers that read the endpoint lists get fewer
+  but working entries.
+
 ## 13.0.0
 
 ### Major Changes
