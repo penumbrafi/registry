@@ -27,7 +27,10 @@
   ],
   "frontends": [
     "https://penumbra.zechub.org",
-    "https://penumbra.fi"
+    "https://penumbra.fi",
+    "https://penumbra.grpc.ghostinnet.com",
+    "https://grpc.penumbra.validatus.com",
+    "https://penumbra.bryanlabs.net"
   ],
   "frontendsV2": [
     {
@@ -42,6 +45,25 @@
     {
       "name": "Penumbra.fi",
       "url": "https://penumbra.fi",
+      "images": []
+    },
+    {
+      "name": "ghostinnet",
+      "url": "https://penumbra.grpc.ghostinnet.com",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/ghostinnet.png"
+        }
+      ]
+    },
+    {
+      "name": "Validatus",
+      "url": "https://grpc.penumbra.validatus.com",
+      "images": []
+    },
+    {
+      "name": "Bryanlabs",
+      "url": "https://penumbra.bryanlabs.net",
       "images": []
     }
   ],
