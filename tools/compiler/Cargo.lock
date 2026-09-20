@@ -401,6 +401,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf9ff0bbfd639f15c74af777d81383cf53efb7c93613f6cab67c6c11e05bbf8b"
 
 [[package]]
+name = "bech32"
+version = "0.11.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "32637268377fc7b10a8c6d51de3e7fba1ce5dd371a96e342b34e6078db558e7f"
+
+[[package]]
 name = "bit_field"
 version = "0.10.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -963,7 +969,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "33d852cb9b869c2a9b3df2f71a3074817f01e1844f839a144f5fcef059a4eb5d"
 dependencies = [
  "libc",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -2481,6 +2487,7 @@ name = "penumbra-registry"
 version = "2.0.0"
 dependencies = [
  "anyhow",
+ "bech32 0.11.1",
  "color-thief",
  "image",
  "penumbra-sdk-asset",
@@ -2509,7 +2516,7 @@ dependencies = [
  "ark-serialize",
  "ark-std",
  "base64 0.21.7",
- "bech32",
+ "bech32 0.8.1",
  "blake2b_simd 1.0.2",
  "bytes",
  "decaf377",
@@ -2550,7 +2557,7 @@ dependencies = [
  "ark-snark",
  "ark-std",
  "base64 0.21.7",
- "bech32",
+ "bech32 0.8.1",
  "blake2b_simd 1.0.2",
  "bytes",
  "decaf377",
@@ -2579,7 +2586,7 @@ source = "git+https://github.com/penumbra-zone/penumbra.git?rev=8463d632fd12257d
 dependencies = [
  "anyhow",
  "async-trait",
- "bech32",
+ "bech32 0.8.1",
  "bytes",
  "decaf377-fmd",
  "decaf377-rdsa",
@@ -2824,7 +2831,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d0f3e5beed80eb580c68e2c600937ac2c4eedabdfd5ef1e5b7ea4f3fba84497b"
 dependencies = [
  "heck",
- "itertools 0.12.1",
+ "itertools 0.13.0",
  "log",
  "multimap",
  "once_cell",
@@ -2844,7 +2851,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "157c5a9d7ea5c2ed2d9fb8f495b64759f7816c7eaea54ba3978f0d63000162e3"
 dependencies = [
  "anyhow",
- "itertools 0.12.1",
+ "itertools 0.13.0",
  "proc-macro2 1.0.93",
  "quote",
  "syn 2.0.96",
@@ -3206,7 +3213,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -3769,7 +3776,7 @@ dependencies = [
  "getrandom",
  "once_cell",
  "rustix",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]

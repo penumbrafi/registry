@@ -91,6 +91,9 @@ pub struct IbcInput {
 pub struct ValidatorInput {
     pub name: String,
     pub base: String,
+    /// Optional. When omitted, the logo URL is derived from the identity key in
+    /// `base`, provided `images/validators/<key>.png` exists in the repository.
+    #[serde(default)]
     pub images: Vec<AssetImage>,
 }
 
