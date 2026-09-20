@@ -218,6 +218,35 @@
         }
       ]
     },
+    "/Vy+5MICHE1gbv/SdMOanJ3IcyW3PcYjQouTPcpekA0=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid19jqf35xytm4ht9f8awtad9wxmfky0tjygug8390cewyqjwmyucqqkkrc9r"
+        },
+        {
+          "denom": "mdelegation_penumbravalid19jqf35xytm4ht9f8awtad9wxmfky0tjygug8390cewyqjwmyucqqkkrc9r",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid19jqf35xytm4ht9f8awtad9wxmfky0tjygug8390cewyqjwmyucqqkkrc9r",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid19jqf35xytm4ht9f8awtad9wxmfky0tjygug8390cewyqjwmyucqqkkrc9r",
+      "display": "delegation_penumbravalid19jqf35xytm4ht9f8awtad9wxmfky0tjygug8390cewyqjwmyucqqkkrc9r",
+      "symbol": "delUM(silent)",
+      "penumbraAssetId": {
+        "inner": "/Vy+5MICHE1gbv/SdMOanJ3IcyW3PcYjQouTPcpekA0="
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid19jqf35xytm4ht9f8awtad9wxmfky0tjygug8390cewyqjwmyucqqkkrc9r.png",
+          "theme": {
+            "primaryColorHex": "#0c0e14"
+          }
+        }
+      ]
+    },
     "0MEQQsTe/BbQkavD+bHMcWiLsVAv21ifSVMalRXDjhA=": {
       "description": "Stride's liquid staked TIA",
       "denomUnits": [
@@ -1567,6 +1596,35 @@
         }
       ]
     },
+    "AT0QqBttTDnvma0S/pOJViUIJLqVFNNDkGaRtCiGlQU=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid19qcxdmkpry2zda9htt2wprpk32yc9nwjgmc0xvqwm8qz5afk6upsmg55hh"
+        },
+        {
+          "denom": "mdelegation_penumbravalid19qcxdmkpry2zda9htt2wprpk32yc9nwjgmc0xvqwm8qz5afk6upsmg55hh",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid19qcxdmkpry2zda9htt2wprpk32yc9nwjgmc0xvqwm8qz5afk6upsmg55hh",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid19qcxdmkpry2zda9htt2wprpk32yc9nwjgmc0xvqwm8qz5afk6upsmg55hh",
+      "display": "delegation_penumbravalid19qcxdmkpry2zda9htt2wprpk32yc9nwjgmc0xvqwm8qz5afk6upsmg55hh",
+      "symbol": "delUM(Bryanlabs)",
+      "penumbraAssetId": {
+        "inner": "AT0QqBttTDnvma0S/pOJViUIJLqVFNNDkGaRtCiGlQU="
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid19qcxdmkpry2zda9htt2wprpk32yc9nwjgmc0xvqwm8qz5afk6upsmg55hh.png",
+          "theme": {
+            "primaryColorHex": "#99d44a"
+          }
+        }
+      ]
+    },
     "Ab+YgSwUEu9eoWqiLieB6N1MyllLiM7/NOO7lfP9kwQ=": {
       "description": "The governance token of the Arena DAO",
       "denomUnits": [
@@ -1677,6 +1735,27 @@
           }
         }
       ]
+    },
+    "Az7J/zscBkl8WRCuLB9c8a56hy96iEQ6IDF9K+JXWgw=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid1ktcv24rwkp69mc6hf5g7kwpwrevy6mrzdsg07nq3za6z4fp72cyqf4aw3d"
+        },
+        {
+          "denom": "mdelegation_penumbravalid1ktcv24rwkp69mc6hf5g7kwpwrevy6mrzdsg07nq3za6z4fp72cyqf4aw3d",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid1ktcv24rwkp69mc6hf5g7kwpwrevy6mrzdsg07nq3za6z4fp72cyqf4aw3d",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid1ktcv24rwkp69mc6hf5g7kwpwrevy6mrzdsg07nq3za6z4fp72cyqf4aw3d",
+      "display": "delegation_penumbravalid1ktcv24rwkp69mc6hf5g7kwpwrevy6mrzdsg07nq3za6z4fp72cyqf4aw3d",
+      "symbol": "delUM(antumbra.net)",
+      "penumbraAssetId": {
+        "inner": "Az7J/zscBkl8WRCuLB9c8a56hy96iEQ6IDF9K+JXWgw="
+      }
     },
     "B+9mATKkwyNfqyctQ9m5dSqDN7LRCFl6v/r/XyRtDw8=": {
       "description": "ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.",
@@ -3385,6 +3464,35 @@
         }
       ]
     },
+    "QhxKBl8Hc5YbL5O9wrFJ2th2s587v61phMDzdFZUTw4=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid10n2srs5257a6nxq9x3fhcsqyc0wh8q2lp7f80qd7wlmzdm6znypse23mmh"
+        },
+        {
+          "denom": "mdelegation_penumbravalid10n2srs5257a6nxq9x3fhcsqyc0wh8q2lp7f80qd7wlmzdm6znypse23mmh",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid10n2srs5257a6nxq9x3fhcsqyc0wh8q2lp7f80qd7wlmzdm6znypse23mmh",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid10n2srs5257a6nxq9x3fhcsqyc0wh8q2lp7f80qd7wlmzdm6znypse23mmh",
+      "display": "delegation_penumbravalid10n2srs5257a6nxq9x3fhcsqyc0wh8q2lp7f80qd7wlmzdm6znypse23mmh",
+      "symbol": "delUM(ghostinnet)",
+      "penumbraAssetId": {
+        "inner": "QhxKBl8Hc5YbL5O9wrFJ2th2s587v61phMDzdFZUTw4="
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid10n2srs5257a6nxq9x3fhcsqyc0wh8q2lp7f80qd7wlmzdm6znypse23mmh.png",
+          "theme": {
+            "primaryColorHex": "#dd2912"
+          }
+        }
+      ]
+    },
     "QnAMDwszxX3EMgb3dFGw2dcGaN9najQfY5+kTxD85g8=": {
       "description": "An alloy of APTOS asset variants on Osmosis.",
       "denomUnits": [
@@ -3667,6 +3775,35 @@
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/busd.svg",
           "theme": {
             "primaryColorHex": "#f3bb0c"
+          }
+        }
+      ]
+    },
+    "SmEz7RDk7h38jwpL+xNIsTT5XAtmWXDO60ZLve+Puw8=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid1gq4j0hh6grl6d7apwg8z5qj97q7uhkeq0tp9qr66xe03cyrjkyrskp7s6v"
+        },
+        {
+          "denom": "mdelegation_penumbravalid1gq4j0hh6grl6d7apwg8z5qj97q7uhkeq0tp9qr66xe03cyrjkyrskp7s6v",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid1gq4j0hh6grl6d7apwg8z5qj97q7uhkeq0tp9qr66xe03cyrjkyrskp7s6v",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid1gq4j0hh6grl6d7apwg8z5qj97q7uhkeq0tp9qr66xe03cyrjkyrskp7s6v",
+      "display": "delegation_penumbravalid1gq4j0hh6grl6d7apwg8z5qj97q7uhkeq0tp9qr66xe03cyrjkyrskp7s6v",
+      "symbol": "delUM(PathrockNetwork)",
+      "penumbraAssetId": {
+        "inner": "SmEz7RDk7h38jwpL+xNIsTT5XAtmWXDO60ZLve+Puw8="
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid1gq4j0hh6grl6d7apwg8z5qj97q7uhkeq0tp9qr66xe03cyrjkyrskp7s6v.png",
+          "theme": {
+            "primaryColorHex": "#14151e"
           }
         }
       ]
@@ -4898,6 +5035,35 @@
         }
       ]
     },
+    "bbT/GSRPfGhuUp9DuDZqkP25azndkkU9/wcWIIJIQwc=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid1mr4j6nh3za3wjptjr2uj2ssr3fg0gxxqgqg9vgjl7luqa3qur5zs3fj5w6"
+        },
+        {
+          "denom": "mdelegation_penumbravalid1mr4j6nh3za3wjptjr2uj2ssr3fg0gxxqgqg9vgjl7luqa3qur5zs3fj5w6",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid1mr4j6nh3za3wjptjr2uj2ssr3fg0gxxqgqg9vgjl7luqa3qur5zs3fj5w6",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid1mr4j6nh3za3wjptjr2uj2ssr3fg0gxxqgqg9vgjl7luqa3qur5zs3fj5w6",
+      "display": "delegation_penumbravalid1mr4j6nh3za3wjptjr2uj2ssr3fg0gxxqgqg9vgjl7luqa3qur5zs3fj5w6",
+      "symbol": "delUM(Tessellated)",
+      "penumbraAssetId": {
+        "inner": "bbT/GSRPfGhuUp9DuDZqkP25azndkkU9/wcWIIJIQwc="
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid1mr4j6nh3za3wjptjr2uj2ssr3fg0gxxqgqg9vgjl7luqa3qur5zs3fj5w6.png",
+          "theme": {
+            "primaryColorHex": "#d42c2c"
+          }
+        }
+      ]
+    },
     "cNEnw3iPGCEJlLiGlq9Y++lZPwJoMxe6JnLzBb8Hiwg=": {
       "description": "Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.",
       "denomUnits": [
@@ -4948,6 +5114,35 @@
           "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/injective/images/cw20drugs.png",
           "theme": {
             "primaryColorHex": "#f5db48"
+          }
+        }
+      ]
+    },
+    "cPW0G3CJM+DtgQ76hH7sF+c9tFiWW4uzcBequf6mAg4=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid1ar6hyxmvy0em86nclqgxc4qlauj9ct747g4dsx8tn6wthg9nuvrq099640"
+        },
+        {
+          "denom": "mdelegation_penumbravalid1ar6hyxmvy0em86nclqgxc4qlauj9ct747g4dsx8tn6wthg9nuvrq099640",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid1ar6hyxmvy0em86nclqgxc4qlauj9ct747g4dsx8tn6wthg9nuvrq099640",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid1ar6hyxmvy0em86nclqgxc4qlauj9ct747g4dsx8tn6wthg9nuvrq099640",
+      "display": "delegation_penumbravalid1ar6hyxmvy0em86nclqgxc4qlauj9ct747g4dsx8tn6wthg9nuvrq099640",
+      "symbol": "delUM(rotko.net)",
+      "penumbraAssetId": {
+        "inner": "cPW0G3CJM+DtgQ76hH7sF+c9tFiWW4uzcBequf6mAg4="
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid1ar6hyxmvy0em86nclqgxc4qlauj9ct747g4dsx8tn6wthg9nuvrq099640.png",
+          "theme": {
+            "primaryColorHex": "#14eceb"
           }
         }
       ]
@@ -6339,6 +6534,35 @@
         }
       ]
     },
+    "nhxlufFkZckcEbBTdxnKyvxUuAgUpUJJJIcJVRcIbAg=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid1q2eu6p33ne58aq0xh2ramsftmxqtqzlzwpa6uy8tgygje39mzypsq6nuyw"
+        },
+        {
+          "denom": "mdelegation_penumbravalid1q2eu6p33ne58aq0xh2ramsftmxqtqzlzwpa6uy8tgygje39mzypsq6nuyw",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid1q2eu6p33ne58aq0xh2ramsftmxqtqzlzwpa6uy8tgygje39mzypsq6nuyw",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid1q2eu6p33ne58aq0xh2ramsftmxqtqzlzwpa6uy8tgygje39mzypsq6nuyw",
+      "display": "delegation_penumbravalid1q2eu6p33ne58aq0xh2ramsftmxqtqzlzwpa6uy8tgygje39mzypsq6nuyw",
+      "symbol": "delUM(Validatus)",
+      "penumbraAssetId": {
+        "inner": "nhxlufFkZckcEbBTdxnKyvxUuAgUpUJJJIcJVRcIbAg="
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid1q2eu6p33ne58aq0xh2ramsftmxqtqzlzwpa6uy8tgygje39mzypsq6nuyw.png",
+          "theme": {
+            "primaryColorHex": "#aa1e0e"
+          }
+        }
+      ]
+    },
     "o+MALwmW631aohS0whSZ45kjaObtS+jgFI6Gbfc/CwY=": {
       "description": "Baddest coin on Cosmos",
       "denomUnits": [
@@ -7297,6 +7521,35 @@
         }
       ]
     },
+    "udb9fOKZIdHZBrzj+7ks+LnGKY/jvMvHFAU1fMFl/Ao=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid1jf8tmgqaar2xdrhspmmuwyd6jt6hedjh0gz32pz4vwrmh93tvsyswth2sf"
+        },
+        {
+          "denom": "mdelegation_penumbravalid1jf8tmgqaar2xdrhspmmuwyd6jt6hedjh0gz32pz4vwrmh93tvsyswth2sf",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid1jf8tmgqaar2xdrhspmmuwyd6jt6hedjh0gz32pz4vwrmh93tvsyswth2sf",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid1jf8tmgqaar2xdrhspmmuwyd6jt6hedjh0gz32pz4vwrmh93tvsyswth2sf",
+      "display": "delegation_penumbravalid1jf8tmgqaar2xdrhspmmuwyd6jt6hedjh0gz32pz4vwrmh93tvsyswth2sf",
+      "symbol": "delUM(MathNodes)",
+      "penumbraAssetId": {
+        "inner": "udb9fOKZIdHZBrzj+7ks+LnGKY/jvMvHFAU1fMFl/Ao="
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid1jf8tmgqaar2xdrhspmmuwyd6jt6hedjh0gz32pz4vwrmh93tvsyswth2sf.png",
+          "theme": {
+            "primaryColorHex": "#c0c0c0"
+          }
+        }
+      ]
+    },
     "v4sDXdozm2zajyIeeXc7D9hx8npHKSD4TEqitPmKcA0=": {
       "description": "An alloy of USDT asset variants on Osmosis.",
       "denomUnits": [
@@ -7556,6 +7809,35 @@
         }
       ],
       "coingeckoId": "ion"
+    },
+    "xcKXD4CC9tGBVZo5wt/hDhkzW4X9N7roReQERRaK4gs=": {
+      "denomUnits": [
+        {
+          "denom": "udelegation_penumbravalid1he9sez9r2yzc8dekh5w7vqqz6r5c557s8jjchmu3879e9lzn4g9q57k04c"
+        },
+        {
+          "denom": "mdelegation_penumbravalid1he9sez9r2yzc8dekh5w7vqqz6r5c557s8jjchmu3879e9lzn4g9q57k04c",
+          "exponent": 3
+        },
+        {
+          "denom": "delegation_penumbravalid1he9sez9r2yzc8dekh5w7vqqz6r5c557s8jjchmu3879e9lzn4g9q57k04c",
+          "exponent": 6
+        }
+      ],
+      "base": "udelegation_penumbravalid1he9sez9r2yzc8dekh5w7vqqz6r5c557s8jjchmu3879e9lzn4g9q57k04c",
+      "display": "delegation_penumbravalid1he9sez9r2yzc8dekh5w7vqqz6r5c557s8jjchmu3879e9lzn4g9q57k04c",
+      "symbol": "delUM(OriginStake)",
+      "penumbraAssetId": {
+        "inner": "xcKXD4CC9tGBVZo5wt/hDhkzW4X9N7roReQERRaK4gs="
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid1he9sez9r2yzc8dekh5w7vqqz6r5c557s8jjchmu3879e9lzn4g9q57k04c.png",
+          "theme": {
+            "primaryColorHex": "#046cfc"
+          }
+        }
+      ]
     },
     "xiQRY+bbf/knL8LkZc7sv0/uvMNdZwdiuReCN/3YkQM=": {
       "description": "$ATOM to $1,000 LFG!!",
