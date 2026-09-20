@@ -193,13 +193,37 @@ pub fn process_registry_images(registry: &mut Registry) -> AppResult<()> {
     Ok(())
 }
 
+/// Base URL the repository's own images are served from.
+const SELF_HOSTED_IMAGE_PREFIX: &str =
+    "https://raw.githubusercontent.com/penumbrafi/registry/main/images/";
+/// The same directory on disk, relative to the compiler's working directory.
+const LOCAL_IMAGE_DIR: &str = "../../images/";
+
+/// Read an image that this repository hosts from disk rather than over the network.
+///
+/// Images referenced by their published URL are otherwise fetched from `main`,
+/// which means a newly added image cannot be used until after it is merged: the
+/// build resolves the URL, gets a 404, and fails. Resolving our own images
+/// locally removes that ordering constraint, and keeps the build from depending
+/// on the network for files that are sitting in the working tree.
+fn read_self_hosted_image(url: &str) -> Option<Vec<u8>> {
+    let relative = url.strip_prefix(SELF_HOSTED_IMAGE_PREFIX)?;
+    std::fs::read(Path::new(LOCAL_IMAGE_DIR).join(relative)).ok()
+}
+
 fn get_dominant_color_from_svg(url: &str) -> Result<Color, anyhow::Error> {
-    // Download the SVG content
-    let response =
-        reqwest::blocking::get(url).map_err(|e| anyhow!("Failed to download SVG: {}", e))?;
-    let svg_content = response
-        .text()
-        .map_err(|e| anyhow!("Failed to read SVG content: {}", e))?;
+    // Prefer our own copy on disk; fall back to the network for foreign images.
+    let svg_content = match read_self_hosted_image(url) {
+        Some(bytes) => String::from_utf8(bytes)
+            .map_err(|e| anyhow!("Failed to read local SVG content: {}", e))?,
+        None => {
+            let response = reqwest::blocking::get(url)
+                .map_err(|e| anyhow!("Failed to download SVG: {}", e))?;
+            response
+                .text()
+                .map_err(|e| anyhow!("Failed to read SVG content: {}", e))?
+        }
+    };
 
     // Parse SVG into a usvg tree
     let options = Options::default();
@@ -228,12 +252,18 @@ fn get_dominant_color_from_svg(url: &str) -> Result<Color, anyhow::Error> {
 }
 
 fn get_dominant_color_from_png(url: &str) -> Result<Color, anyhow::Error> {
-    // Download the image
-    let response =
-        reqwest::blocking::get(url).map_err(|e| anyhow!("Failed to download PNG: {}", e))?;
-    let img_bytes = response
-        .bytes()
-        .map_err(|e| anyhow!("Failed to read PNG bytes: {}", e))?;
+    // Prefer our own copy on disk; fall back to the network for foreign images.
+    let img_bytes = match read_self_hosted_image(url) {
+        Some(bytes) => bytes,
+        None => {
+            let response = reqwest::blocking::get(url)
+                .map_err(|e| anyhow!("Failed to download PNG: {}", e))?;
+            response
+                .bytes()
+                .map_err(|e| anyhow!("Failed to read PNG bytes: {}", e))?
+                .to_vec()
+        }
+    };
     let img =
         image::load_from_memory(&img_bytes).map_err(|e| anyhow!("Failed to load PNG: {}", e))?;
 

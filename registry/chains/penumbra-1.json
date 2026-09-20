@@ -1755,7 +1755,15 @@
       "symbol": "delUM(antumbra.net)",
       "penumbraAssetId": {
         "inner": "Az7J/zscBkl8WRCuLB9c8a56hy96iEQ6IDF9K+JXWgw="
-      }
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/penumbrafi/registry/main/images/validators/penumbravalid1ktcv24rwkp69mc6hf5g7kwpwrevy6mrzdsg07nq3za6z4fp72cyqf4aw3d.png",
+          "theme": {
+            "primaryColorHex": "#702c0d"
+          }
+        }
+      ]
     },
     "B+9mATKkwyNfqyctQ9m5dSqDN7LRCFl6v/r/XyRtDw8=": {
       "description": "ATOM is the native cryptocurrency of the Cosmos network, designed to facilitate interoperability between multiple blockchains through its innovative hub-and-spoke model.",
