@@ -27,8 +27,7 @@
   ],
   "frontends": [
     "https://penumbra.zechub.org",
-    "https://dex.rotko.net",
-    "https://zafu.pro"
+    "https://penumbra.fi"
   ],
   "frontendsV2": [
     {
@@ -41,13 +40,8 @@
       ]
     },
     {
-      "name": "Rotko Networks",
-      "url": "https://dex.rotko.net",
-      "images": []
-    },
-    {
-      "name": "Zafu",
-      "url": "https://zafu.pro",
+      "name": "Penumbra.fi",
+      "url": "https://penumbra.fi",
       "images": []
     }
   ],
@@ -63,7 +57,7 @@
     },
     {
       "name": "Zafu",
-      "url": "https://zafu.rotko.net/",
+      "url": "https://zafu.pro/",
       "images": []
     }
   ],

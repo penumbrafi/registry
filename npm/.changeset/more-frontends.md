@@ -2,9 +2,14 @@
 '@penumbrafi/registry': patch
 ---
 
-Add `dex.rotko.net` (veil) and `zafu.pro` (Zafu wallet) to the frontend lists.
+Add `penumbra.fi` (veil DEX) to the frontend lists, and point the Zafu wallet
+entry at `zafu.pro`.
 
-Both verified serving. The frontend list had been reduced to a single entry
-after the dead endpoints were removed; these are the other Penumbra frontends
-found to be live. `penumbra.bryanlabs.net/app` was checked and excluded: it
-answers `application/grpc`, so it is the gRPC endpoint rather than an app.
+Removing the dead endpoints had left a single frontend. `penumbra.fi` serves
+the same veil instance as `dex.rotko.net` (byte-identical), so only the
+project-branded hostname is listed. The Zafu `wallets` entry pointed at
+`zafu.rotko.net`, which redirects to `zafu.pro`; it now names the destination
+directly.
+
+`penumbra.bryanlabs.net/app` was checked and excluded: it answers
+`application/grpc`, so it is the gRPC endpoint rather than an app.
