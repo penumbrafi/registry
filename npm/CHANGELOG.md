@@ -1,5 +1,57 @@
 # @penumbrafi/registry
 
+## 13.1.1
+
+### Patch Changes
+
+- c19afdd: Expand the frontend lists and point the Zafu wallet entry at `zafu.pro`.
+
+  Every pd gRPC endpoint also serves the frontend at the same address: the root
+  returns a single-page app whose router handles `/app` client-side (requesting
+  `/app` from the server returns `application/grpc`, so the route only resolves in
+  a browser). The ghostinnet, Validatus and Bryanlabs RPC hosts all serve the
+  identical bundle, so they are now listed as frontends as well as RPCs.
+
+  Also adds `penumbra.fi`, which serves the same veil instance as
+  `dex.rotko.net` (byte-identical), listed under the project-branded hostname.
+
+  The Zafu `wallets` entry pointed at `zafu.rotko.net`, which redirects to
+  `zafu.pro`; it now names the destination directly. Zafu is a wallet, so it stays
+  in `wallets` alongside Prax rather than in the frontend lists.
+
+- ba9918a: Order `numeraires` by `canonicalNumeraires` instead of by asset order.
+
+  The compiler built the numeraire list by filtering all assets, so output order
+  followed the asset list rather than the order the chain input declares. A client
+  that takes the first numeraire as its default quote asset therefore got an
+  arbitrary one. It now follows `canonicalNumeraires` directly, making
+  `USDC.inj` the first numeraire on `penumbra-1` ahead of Noble USDC.
+
+  Only `penumbra-1` changes; every testnet output is byte-identical.
+
+- d73f94a: List the Rotko RPC as `rpc.penumbra.fi` rather than `penumbra.rotko.net`.
+
+  Both names resolve to the same node (same address, moniker
+  `penumbra-03.ct.rotko.net`), so this changes the published hostname only. The
+  project-branded name does not tie the endpoint to an operator domain if the
+  node moves.
+
+- 9fea4fa: Add validator metadata for `penumbra-1`, giving delegation tokens names and
+  logos.
+
+  Each active validator now produces a delegation-token entry
+  (`udelegation_penumbravalid1…`, `symbol: delUM(<name>)`) carrying the
+  validator's logo, with a dominant colour extracted at build time for asset
+  theming. Previously these tokens had no metadata at all.
+
+  Covers the ten validators currently in the active set. Nine have logos; antumbra
+  is active but no logo exists for it yet.
+
+  The validator list records only what cannot be derived — the name and the
+  identity key. Logo URLs are derived by the compiler from the key when
+  `images/validators/<key>.png` exists, and `tools/compiler/src/bin/refresh-validators.rs`
+  regenerates the list from a live node on demand.
+
 ## 13.1.0
 
 ### Minor Changes
