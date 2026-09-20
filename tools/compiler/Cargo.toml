@@ -8,6 +8,7 @@ default-run = "penumbra-registry"
 penumbra-proto = { git = "https://github.com/penumbra-zone/penumbra.git", rev = "8463d632fd12257d7c0a7df76587cef60eb01615", package = "penumbra-sdk-proto", default-features = false }
 penumbra-asset = { git = "https://github.com/penumbra-zone/penumbra.git", rev = "8463d632fd12257d7c0a7df76587cef60eb01615", package = "penumbra-sdk-asset" }
 anyhow = "1.0.75"
+bech32 = "0.11.0"
 serde = { version = "1.0.188", features = ["derive"] }
 serde_json = { version = "1.0.107", features = ["preserve_order", "raw_value"] }
 regress = "0.10.1"
