@@ -21,8 +21,7 @@ use std::{path::PathBuf, process::Command};
 
 const DEFAULT_RPC: &str = "penumbra.grpc.ghostinnet.com";
 const DEFAULT_CHAIN: &str = "penumbra-1";
-const VALIDATOR_INFO_METHOD: &str =
-    "penumbra.core.component.stake.v1.QueryService/ValidatorInfo";
+const VALIDATOR_INFO_METHOD: &str = "penumbra.core.component.stake.v1.QueryService/ValidatorInfo";
 
 /// Ask a node for every validator it knows about, as (name, identity key).
 fn query_validators(rpc: &str) -> Result<Vec<(String, String)>> {
@@ -88,7 +87,10 @@ fn base64_decode(input: &str) -> Result<Vec<u8>> {
     let mut bits = 0u32;
     let mut out = Vec::new();
 
-    for byte in input.bytes().filter(|b| *b != b'=' && !b.is_ascii_whitespace()) {
+    for byte in input
+        .bytes()
+        .filter(|b| *b != b'=' && !b.is_ascii_whitespace())
+    {
         let value = ALPHABET
             .iter()
             .position(|c| *c == byte)
@@ -113,7 +115,11 @@ fn main() -> Result<()> {
     while let Some(arg) = args.next() {
         match arg.as_str() {
             "--rpc" => rpc = args.next().ok_or_else(|| anyhow!("--rpc needs a value"))?,
-            "--chain" => chain = args.next().ok_or_else(|| anyhow!("--chain needs a value"))?,
+            "--chain" => {
+                chain = args
+                    .next()
+                    .ok_or_else(|| anyhow!("--chain needs a value"))?
+            }
             "--check" => check = true,
             other => bail!("unrecognised argument: {other}"),
         }
@@ -121,10 +127,10 @@ fn main() -> Result<()> {
 
     let root = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../..");
     let path = root.join("input/chains").join(format!("{chain}.json"));
-    let current = std::fs::read_to_string(&path)
-        .with_context(|| format!("reading {}", path.display()))?;
-    let mut config: Value = serde_json::from_str(&current)
-        .with_context(|| format!("parsing {}", path.display()))?;
+    let current =
+        std::fs::read_to_string(&path).with_context(|| format!("reading {}", path.display()))?;
+    let mut config: Value =
+        serde_json::from_str(&current).with_context(|| format!("parsing {}", path.display()))?;
 
     let mut validators = query_validators(&rpc)?;
     if validators.is_empty() {
@@ -161,7 +167,11 @@ fn main() -> Result<()> {
     }
 
     std::fs::write(&path, rendered).with_context(|| format!("writing {}", path.display()))?;
-    println!("wrote {} validators to {}", validators.len(), path.display());
+    println!(
+        "wrote {} validators to {}",
+        validators.len(),
+        path.display()
+    );
 
     let images = root.join("images/validators");
     let missing: Vec<&str> = validators
