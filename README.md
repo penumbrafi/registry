@@ -159,3 +159,12 @@ We do, indirectly. The Cosmos chain registry describes assets on Cosmos chains. 
 clients need data about assets _on Penumbra_, including Penumbra-specific data such as the
 Penumbra asset ID, and the metadata an asset takes on once it has been transported along a
 particular channel. This repository is that view.
+
+## Publishing
+
+npm rejects CI publishes with our token type (2FA / granular-token rules), so publishing is manual:
+
+1. Merge the changesets **Version Packages** PR (CI keeps it up to date on every push to `main`).
+2. On `main`, run `just publish-npm` — this runs `changeset publish` in `npm/` with your own `npm login` session and pushes the release tag.
+
+Consumers can also pin the git branch `rotko-release` or read the raw JSON; see above.
