@@ -1,35 +1,22 @@
-name: Publish to Npm
+name: Version Packages
+
+# Publishing to npm is done manually by a maintainer (see README "Publishing").
+# This workflow only keeps the changesets "Version Packages" PR up to date: it
+# never publishes and needs no npm token.
 
 on:
-  workflow_call:
   workflow_dispatch:
   push:
     branches:
       - main
 
 permissions:
-  # changesets opens/updates the "Version Packages" PR
   contents: write
   pull-requests: write
 
 jobs:
-  # `secrets` cannot be evaluated in a job-level `if`, so the presence of
-  # NPM_TOKEN is turned into a plain job output first. Until the npm scope
-  # exists and a token is configured, the publish job is skipped rather than
-  # failing every push to main.
-  gate:
-    name: Check for npm credentials
-    runs-on: ubuntu-latest
-    outputs:
-      has_token: ${{ steps.check.outputs.has_token }}
-    steps:
-      - id: check
-        run: echo "has_token=${{ secrets.NPM_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
-
-  publish:
-    name: Publish to npm
-    needs: gate
-    if: needs.gate.outputs.has_token == 'true'
+  version:
+    name: Open or update the Version Packages PR
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -41,9 +28,7 @@ jobs:
           submodules: true
 
       # There is no root package.json in this repo, so the action has to be
-      # told where the `packageManager` pin lives; without it the setup fails
-      # with "No pnpm version is specified". Passing `version:` as well would
-      # fail the other way, with "Multiple versions of pnpm specified".
+      # told where the `packageManager` pin lives.
       - uses: pnpm/action-setup@v4
         with:
           package_json_file: npm/package.json
@@ -51,24 +36,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build
-        run: pnpm build
-
-      # If there are changesets, this action will create a PR on the repo to version packages
-      # If there are none, it will publish newer-versioned public packages to npm
-      - name: Create Release Pull Request or Publish to npm
-        id: changesets
-        # Pin version for changeset action helper; refs https://github.com/prax-wallet/registry/issues/147
+      - name: Create or update the Version Packages PR
         uses: changesets/action@v1.5.2
         with:
-          publish: pnpm changeset:publish
           cwd: "${{ github.workspace }}/npm"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
