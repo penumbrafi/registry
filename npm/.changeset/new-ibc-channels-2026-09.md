@@ -1,5 +1,5 @@
 ---
-"@penumbrafi/registry": minor
+'@penumbrafi/registry': minor
 ---
 
 List the new Osmosis, Kava, Cosmos Hub and Celestia channels, and rename the legacy ones.
@@ -8,12 +8,12 @@ The old Cosmos Hub, Celestia and Osmosis channels expired when their counterpart
 clients lapsed and cannot be revived without a governance proposal on each counterparty
 chain. Fresh channels were opened permissionlessly instead:
 
-| chain | penumbra | counterparty |
-| --- | --- | --- |
-| Osmosis | channel-20 | channel-111093 |
-| Kava | channel-21 | channel-162 |
-| Cosmos Hub | channel-22 | channel-1934 |
-| Celestia | channel-23 | channel-701 |
+| chain      | penumbra   | counterparty   |
+| ---------- | ---------- | -------------- |
+| Osmosis    | channel-20 | channel-111093 |
+| Kava       | channel-21 | channel-162    |
+| Cosmos Hub | channel-22 | channel-1934   |
+| Celestia   | channel-23 | channel-701    |
 
 All four are verified end to end — deposit and withdrawal, relayed and acknowledged.
 
