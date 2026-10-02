@@ -122,7 +122,10 @@ pub fn transparent_chain(
         .or_else(|| chain["slip44"].as_u64().map(|n| n as u32))
         .unwrap_or(118);
 
-    let fee_tokens = chain["fees"]["fee_tokens"].as_array().cloned().unwrap_or_default();
+    let fee_tokens = chain["fees"]["fee_tokens"]
+        .as_array()
+        .cloned()
+        .unwrap_or_default();
     let fee = match &input.fee_denom {
         Some(d) => fee_tokens
             .iter()
@@ -134,7 +137,10 @@ pub fn transparent_chain(
             .cloned()
             .ok_or(format!("{chain_name} lists no fee token"))?,
     };
-    let denom = fee["denom"].as_str().ok_or("fee token has no denom")?.to_string();
+    let denom = fee["denom"]
+        .as_str()
+        .ok_or("fee token has no denom")?
+        .to_string();
     let price = input
         .gas_price
         .or_else(|| number(&fee["average_gas_price"]))
@@ -155,8 +161,9 @@ pub fn transparent_chain(
         .flatten()
         .find(|u| u["denom"].as_str() == Some(display))
         .and_then(|u| u["exponent"].as_u64())
-        .ok_or(format!("{chain_name} assetlist has no decimals for {denom}"))?
-        as u32;
+        .ok_or(format!(
+            "{chain_name} assetlist has no decimals for {denom}"
+        ))? as u32;
     let symbol = asset["symbol"].as_str().unwrap_or(display).to_string();
 
     let rpc = if input.rpc.is_empty() {
