@@ -10,6 +10,7 @@ use tracing::instrument;
 
 use crate::error::AppResult;
 use crate::processor::Globals;
+use crate::transparent::TransparentInput;
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -84,6 +85,14 @@ pub struct IbcInput {
     pub symbol_overrides: HashMap<String, String>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub status: Option<ConnectionStatus>,
+    /// Corrections to the counterparty's chain-registry entry, for wallets that
+    /// use it as a transparent chain.
+    #[serde(default, skip_serializing_if = "is_default")]
+    pub transparent: TransparentInput,
+}
+
+fn is_default<T: Default + PartialEq>(v: &T) -> bool {
+    *v == T::default()
 }
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
