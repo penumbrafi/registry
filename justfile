@@ -8,3 +8,17 @@ run:
 # after merging the "Version Packages" PR (needs `npm login` with 2FA).
 publish-npm:
     cd npm && pnpm install && pnpm build && pnpm changeset:publish
+
+# Sign registry/chains/<chain>.json for zafu's live refresh (offline key, see tools/sign)
+sign chain="penumbra-1":
+    node tools/sign/sign.mjs {{chain}}
+
+# Check signed/<chain>.json.sig against the compiled registry
+verify chain="penumbra-1":
+    node tools/sign/sign.mjs --verify {{chain}}
+
+# Upload the signed registry to https://zafu.pro/registry/ (verifies first)
+publish-live chain="penumbra-1" host="root@web.rotko.net":
+    node tools/sign/sign.mjs --verify {{chain}}
+    scp registry/chains/{{chain}}.json signed/{{chain}}.json.sig {{host}}:/opt/zafu.pro/registry/
+    ssh {{host}} 'chown deploy:deploy /opt/zafu.pro/registry/{{chain}}.json /opt/zafu.pro/registry/{{chain}}.json.sig'
