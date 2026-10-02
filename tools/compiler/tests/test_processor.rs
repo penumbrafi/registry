@@ -33,6 +33,7 @@ fn test_transport_metadata_along_channel() {
         images: vec![],
         symbol_overrides: HashMap::new(),
         status: None,
+        transparent: Default::default(),
     };
 
     let input_json = r#"

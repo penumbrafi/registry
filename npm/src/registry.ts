@@ -26,6 +26,28 @@ export interface Chain {
    * the connection has not been classified.
    */
   status?: ConnectionStatus;
+  /**
+   * How to use the counterparty as a transparent chain (derive addresses, sign,
+   * query). Absent when it can't be one, e.g. an Ethermint chain.
+   */
+  transparent?: TransparentChain;
+}
+
+export interface TransparentChain {
+  /** the cosmos chain-registry name, e.g. "axelar" */
+  chainName: string;
+  bech32Prefix: string;
+  /** SLIP-44 coin type for m/44'/coinType'/0'/0/n */
+  coinType: number;
+  /** the fee token, also the chain's native asset */
+  denom: string;
+  symbol: string;
+  decimals: number;
+  /** e.g. "0.007uaxl" */
+  gasPrice: string;
+  /** public nodes from trusted operators, or set in the registry input */
+  rpc: string[];
+  rest: string[];
 }
 
 export interface EntityMetadata {

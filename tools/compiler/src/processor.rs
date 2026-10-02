@@ -10,6 +10,7 @@ use crate::parser::{
     copy_globals, get_chain_configs, reset_registry_dir, ChainConfig, ConnectionStatus,
     EntityMetadata, GlobalsInput, IbcInput, LOCAL_INPUT_DIR, LOCAL_REGISTRY_DIR,
 };
+use crate::transparent::{transparent_chain, Transparent};
 use crate::validator::generate_metadata_from_validators;
 use color_thief::{Color, ColorFormat};
 use image;
@@ -39,6 +40,10 @@ pub struct Chain {
     pub images: Vec<AssetImage>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub status: Option<ConnectionStatus>,
+    /// How to use the counterparty as a transparent chain; absent when it
+    /// can't be one (see `transparent::transparent_chain`).
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub transparent: Option<Transparent>,
 }
 
 impl From<IbcInput> for Chain {
@@ -51,6 +56,7 @@ impl From<IbcInput> for Chain {
             display_name: config.display_name,
             images: config.images,
             status: config.status,
+            transparent: None,
         }
     }
 }
@@ -299,7 +305,21 @@ fn process_chain_config(chain_config: ChainConfig) -> AppResult<Registry> {
     all_metadata.extend(chain_config.native_assets.clone());
 
     // For each ibc connection, grab all metadata of native assets from the cosmos registry
+    let mut transparents: Vec<Option<Transparent>> = Vec::new();
     for ibc_input in &chain_config.ibc_connections {
+        let chain_dir = Path::new(LOCAL_COSMOS_REGISTRY_DIR).join(&ibc_input.cosmos_registry_dir);
+        let transparent = fs::read_to_string(chain_dir.join("chain.json"))
+            .ok()
+            .zip(fs::read_to_string(chain_dir.join("assetlist.json")).ok())
+            .and_then(|(chain, assets)| {
+                let chain = serde_json::from_str(&chain).ok()?;
+                let assets = serde_json::from_str(&assets).ok()?;
+                transparent_chain(&chain, &assets, &ibc_input.transparent)
+                    .map_err(|why| println!("{}: no transparent chain, {why}", ibc_input.chain_id))
+                    .ok()
+            });
+        transparents.push(transparent);
+
         let assetlist_path = Path::new(LOCAL_COSMOS_REGISTRY_DIR)
             .join(&ibc_input.cosmos_registry_dir)
             .join("assetlist.json");
@@ -386,7 +406,11 @@ fn process_chain_config(chain_config: ChainConfig) -> AppResult<Registry> {
         ibc_connections: chain_config
             .ibc_connections
             .into_iter()
-            .map(Into::into)
+            .zip(transparents)
+            .map(|(input, transparent)| Chain {
+                transparent,
+                ..input.into()
+            })
             .collect(),
         asset_by_id: all_metadata
             .clone()

@@ -11,7 +11,22 @@
         {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/f1348793beb994c6cc0256ed7ebdb48c7aa70003/osmosis/images/osmo.svg"
         }
-      ]
+      ],
+      "transparent": {
+        "chainName": "osmosistestnet",
+        "bech32Prefix": "osmo",
+        "coinType": 118,
+        "denom": "uosmo",
+        "symbol": "OSMO",
+        "decimals": 6,
+        "gasPrice": "0.025uosmo",
+        "rpc": [
+          "https://rpc.cosmos.directory/osmosistestnet"
+        ],
+        "rest": [
+          "https://rest.cosmos.directory/osmosistestnet"
+        ]
+      }
     },
     {
       "addressPrefix": "noble",
@@ -23,7 +38,22 @@
         {
           "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/2ca39d0e4eaf3431cca13991948e099801f02e46/noble/images/stake.svg"
         }
-      ]
+      ],
+      "transparent": {
+        "chainName": "nobletestnet",
+        "bech32Prefix": "noble",
+        "coinType": 118,
+        "denom": "uusdc",
+        "symbol": "USDC.n",
+        "decimals": 6,
+        "gasPrice": "0.025uusdc",
+        "rpc": [
+          "https://noble-testnet-rpc.polkachu.com"
+        ],
+        "rest": [
+          "https://noble-testnet-api.polkachu.com"
+        ]
+      }
     },
     {
       "addressPrefix": "noble",
@@ -33,7 +63,22 @@
       "displayName": "Duke",
       "images": [
         {}
-      ]
+      ],
+      "transparent": {
+        "chainName": "nobletestnet",
+        "bech32Prefix": "noble",
+        "coinType": 118,
+        "denom": "uusdc",
+        "symbol": "USDC.n",
+        "decimals": 6,
+        "gasPrice": "0.025uusdc",
+        "rpc": [
+          "https://noble-testnet-rpc.polkachu.com"
+        ],
+        "rest": [
+          "https://noble-testnet-api.polkachu.com"
+        ]
+      }
     }
   ],
   "assetById": {
