@@ -1,7 +1,7 @@
 {
   "format": "penumbrafi-registry-sig/1",
   "chainId": "penumbra-1",
-  "version": "13.3.0",
-  "sha256": "05d0ec5397466abeb0bad4ede0cf8011775f8808f430d2af625a3d7816e35ec7",
-  "signature": "rwzHkvI2G19Kt3QdXVQEwdGeYu0kuqjH7ZQQ7+nfX187pXzDRsVOAk7NOZ9ECHd7laIrTwQga61MCbaTrIKRDg=="
+  "version": "13.4.0",
+  "sha256": "7f51e05bfe9416b4f8aecbd76be450fd3c9f8b9bbfd667bfcaa8a6470515e9aa",
+  "signature": "o1jRQ/4Pv8stR/pT9kkRjj8URZHKw0/4w2YOGvC0wUOdHM+pa7lV1TiWUyUgTEx6URvqpfDmtF0JirAmAierBg=="
 }
