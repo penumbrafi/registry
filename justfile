@@ -17,8 +17,10 @@ sign chain="penumbra-1":
 verify chain="penumbra-1":
     node tools/sign/sign.mjs --verify {{chain}}
 
-# Upload the signed registry to https://registry.zafu.pro/ (verifies first)
+# registry.penumbra.fi mirrors main every 5 minutes; this syncs it now and checks the live signature
 publish-live chain="penumbra-1" host="root@web.rotko.net":
     node tools/sign/sign.mjs --verify {{chain}}
-    scp registry/chains/{{chain}}.json signed/{{chain}}.json.sig {{host}}:/opt/zafu-registry/
-    ssh {{host}} 'chown deploy:deploy /opt/zafu-registry/{{chain}}.json /opt/zafu-registry/{{chain}}.json.sig'
+    ssh {{host}} 'systemctl start penumbra-registry-sync.service'
+    curl -sf https://registry.penumbra.fi/signed/{{chain}}.json.sig | cmp - signed/{{chain}}.json.sig
+    curl -sf https://registry.penumbra.fi/registry/chains/{{chain}}.json | cmp - registry/chains/{{chain}}.json
+    @echo "live at https://registry.penumbra.fi/registry/chains/{{chain}}.json"

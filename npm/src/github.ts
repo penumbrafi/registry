@@ -13,7 +13,7 @@ export interface GithubRegistryResponse {
 }
 
 export const REGISTRY_BASE_URL =
-  'https://raw.githubusercontent.com/penumbrafi/registry/main/registry';
+  'https://registry.penumbra.fi/registry';
 
 type ChainId = string;
 
