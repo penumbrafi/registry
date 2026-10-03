@@ -52,11 +52,17 @@ setup.
 Clients with no JavaScript dependency can read the generated files directly:
 
 ```
-https://raw.githubusercontent.com/penumbrafi/registry/main/registry/globals.json
-https://raw.githubusercontent.com/penumbrafi/registry/main/registry/chains/penumbra-1.json
+https://registry.penumbra.fi/registry/globals.json
+https://registry.penumbra.fi/registry/chains/penumbra-1.json
 ```
 
-This is the same base URL the npm package defaults to.
+registry.penumbra.fi mirrors `main` of this repository (synced every 5 minutes) and caches
+the cosmos chain-registry icons the data references, so a client reading it never sends its
+users to GitHub. It is the base URL the npm package defaults to, and every image URL in the
+generated files points there. The same paths also work on raw.githubusercontent.com.
+
+Signed copies for wallets that verify before use (zafu) are in [`signed/`](signed): see
+`just sign`, `just verify` and `just publish-live`.
 
 ## Contributing
 
@@ -117,7 +123,8 @@ to a specific channel and has to move with it.
 - **Display priority**: `priorityScoresByBase` orders assets in client UIs; higher sorts
   first.
 - **Images**: add the file to [`images/`](images) and reference it as
-  `https://raw.githubusercontent.com/penumbrafi/registry/main/images/<file>`.
+  `https://raw.githubusercontent.com/penumbrafi/registry/main/images/<file>`. The compiler
+  reads it from disk and publishes it as `https://registry.penumbra.fi/images/<file>`.
 
 ### Adding an RPC, frontend or wallet
 

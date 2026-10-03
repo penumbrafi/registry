@@ -110,7 +110,7 @@ pub fn generate_registry() -> AppResult<()> {
         let file_name = format!("{}.json", registry.chain_id);
         let output_path = Path::new(LOCAL_REGISTRY_DIR).join("chains").join(file_name);
         let output_json = serde_json::to_string_pretty(&registry)?;
-        fs::write(output_path, output_json)?;
+        fs::write(output_path, crate::mirror::to_mirror(&output_json))?;
     }
 
     Ok(())

@@ -149,7 +149,8 @@ pub fn copy_globals(input_dir: &str, registry_dir: &str) -> AppResult<()> {
     // Write the validated JSON data to the output file
     let output_path = Path::new(registry_dir).join("globals.json");
     let output_json = serde_json::to_string_pretty::<Globals>(&globals)?;
-    fs::write(output_path, output_json).context("failed to write globals json")?;
+    fs::write(output_path, crate::mirror::to_mirror(&output_json))
+        .context("failed to write globals json")?;
 
     Ok(())
 }
