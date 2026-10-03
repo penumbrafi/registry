@@ -17,8 +17,8 @@ sign chain="penumbra-1":
 verify chain="penumbra-1":
     node tools/sign/sign.mjs --verify {{chain}}
 
-# Upload the signed registry to https://zafu.pro/registry/ (verifies first)
+# Upload the signed registry to https://registry.zafu.pro/ (verifies first)
 publish-live chain="penumbra-1" host="root@web.rotko.net":
     node tools/sign/sign.mjs --verify {{chain}}
-    scp registry/chains/{{chain}}.json signed/{{chain}}.json.sig {{host}}:/opt/zafu.pro/registry/
-    ssh {{host}} 'chown deploy:deploy /opt/zafu.pro/registry/{{chain}}.json /opt/zafu.pro/registry/{{chain}}.json.sig'
+    scp registry/chains/{{chain}}.json signed/{{chain}}.json.sig {{host}}:/opt/zafu-registry/
+    ssh {{host}} 'chown deploy:deploy /opt/zafu-registry/{{chain}}.json /opt/zafu-registry/{{chain}}.json.sig'
