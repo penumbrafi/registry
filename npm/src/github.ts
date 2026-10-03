@@ -12,8 +12,7 @@ export interface GithubRegistryResponse {
   numeraires: Base64AssetId[];
 }
 
-export const REGISTRY_BASE_URL =
-  'https://registry.penumbra.fi/registry';
+export const REGISTRY_BASE_URL = 'https://registry.penumbra.fi/registry';
 
 type ChainId = string;
 
