@@ -438,6 +438,20 @@
       "symbolOverrides": {
         "erc20/tether/usdt": "USDT.kava"
       }
+    },
+    {
+      "displayName": "Terp Network",
+      "chainId": "morocco-1",
+      "channelId": "channel-25",
+      "counterpartyChannelId": "channel-16",
+      "status": "active",
+      "addressPrefix": "terp",
+      "cosmosRegistryDir": "terpnetwork",
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/terpnetwork/images/terp.png"
+        }
+      ]
     }
   ],
   "validators": [
@@ -759,7 +773,9 @@
     "transfer/channel-20/factory/osmo1k6c8jln7ejuqwtqmay3yvzrg3kueaczl96pk067ldg8u835w0yhsw27twm/alloyed/allETH": 600000000000,
     "transfer/channel-22/uatom": 800000000098,
     "transfer/channel-23/utia": 800000000097,
-    "transfer/channel-21/erc20/tether/usdt": 700000000001
+    "transfer/channel-21/erc20/tether/usdt": 700000000001,
+    "transfer/channel-25/uterp": 800000000094,
+    "transfer/channel-25/uthiol": 700000000002
   },
   "badges": {
     "osmosis": {
