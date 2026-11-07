@@ -774,8 +774,8 @@
     "transfer/channel-22/uatom": 800000000098,
     "transfer/channel-23/utia": 800000000097,
     "transfer/channel-21/erc20/tether/usdt": 700000000001,
-    "transfer/channel-25/uterp": 800000000094,
-    "transfer/channel-25/uthiol": 700000000002
+    "transfer/channel-25/uterp": 400000000001,
+    "transfer/channel-25/uthiol": 400000000000
   },
   "badges": {
     "osmosis": {
