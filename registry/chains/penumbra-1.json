@@ -398,6 +398,34 @@
           "https://kava-rest.publicnode.com"
         ]
       }
+    },
+    {
+      "addressPrefix": "terp",
+      "chainId": "morocco-1",
+      "channelId": "channel-25",
+      "counterpartyChannelId": "channel-16",
+      "displayName": "Terp Network",
+      "images": [
+        {
+          "png": "https://registry.penumbra.fi/cosmos/chain-registry/master/terpnetwork/images/terp.png"
+        }
+      ],
+      "status": "active",
+      "transparent": {
+        "chainName": "terpnetwork",
+        "bech32Prefix": "terp",
+        "coinType": 118,
+        "denom": "uthiol",
+        "symbol": "THIOL",
+        "decimals": 6,
+        "gasPrice": "0.05uthiol",
+        "rpc": [
+          "https://rpc.cosmos.directory/terpnetwork"
+        ],
+        "rest": [
+          "https://rest.cosmos.directory/terpnetwork"
+        ]
+      }
     }
   ],
   "assetById": {
@@ -8105,7 +8133,7 @@
           "png": "https://registry.penumbra.fi/cosmos/chain-registry/master/zigchain/images/zigchain.png",
           "svg": "https://registry.penumbra.fi/cosmos/chain-registry/master/zigchain/images/zigchain.svg",
           "theme": {
-            "primaryColorHex": "#1fadb1"
+            "primaryColorHex": "#1e1934"
           }
         }
       ]
@@ -8139,6 +8167,34 @@
       ],
       "priorityScore": "800000000097",
       "coingeckoId": "celestia"
+    },
+    "aMW/1lezY0Yv/jzK4HiNJox4S4ytIFlyAvP63tAs7w0=": {
+      "description": "Terp Token (TERP) is the Terp Network's native utility token, used as the primary means to govern & secure the blockchain.",
+      "denomUnits": [
+        {
+          "denom": "transfer/channel-25/uterp"
+        },
+        {
+          "denom": "transfer/channel-25/terp",
+          "exponent": 6
+        }
+      ],
+      "base": "transfer/channel-25/uterp",
+      "display": "transfer/channel-25/terp",
+      "name": "Terp Network Native Token",
+      "symbol": "TERP",
+      "penumbraAssetId": {
+        "inner": "aMW/1lezY0Yv/jzK4HiNJox4S4ytIFlyAvP63tAs7w0="
+      },
+      "images": [
+        {
+          "png": "https://registry.penumbra.fi/cosmos/chain-registry/master/terpnetwork/images/terp.png",
+          "theme": {
+            "primaryColorHex": "#a4d09c"
+          }
+        }
+      ],
+      "priorityScore": "400000000001"
     },
     "aTfHc0qgIevh4rlteheJ/YxuIOGPomodkFIK2juXDxI=": {
       "description": "BackBone Labs Liquid Staked Injective",
@@ -11630,6 +11686,34 @@
         }
       ]
     },
+    "qpKhDiO900e4gvRl1cCkJvA5PETz6beE0OxWUCRpuAE=": {
+      "description": "Thiol Gas Token (Thiols) is the Terp Network's native utility token, used as the primary means to govern, secure the blockchain & incentivize participants.",
+      "denomUnits": [
+        {
+          "denom": "transfer/channel-25/uthiol"
+        },
+        {
+          "denom": "transfer/channel-25/thiol",
+          "exponent": 6
+        }
+      ],
+      "base": "transfer/channel-25/uthiol",
+      "display": "transfer/channel-25/thiol",
+      "name": "Thiol Terp Gas Token",
+      "symbol": "THIOL",
+      "penumbraAssetId": {
+        "inner": "qpKhDiO900e4gvRl1cCkJvA5PETz6beE0OxWUCRpuAE="
+      },
+      "images": [
+        {
+          "png": "https://registry.penumbra.fi/cosmos/chain-registry/master/terpnetwork/images/thiol.png",
+          "theme": {
+            "primaryColorHex": "#807e8f"
+          }
+        }
+      ],
+      "priorityScore": "400000000000"
+    },
     "qv0KzIQ8nB5hl6A0yj4BDG+5oz6REJCK6xebCjXopg4=": {
       "description": "Astroport is a neutral marketplace where anyone, from anywhere in the galaxy, can dock to trade their wares.",
       "denomUnits": [
@@ -11988,7 +12072,7 @@
           "png": "https://registry.penumbra.fi/cosmos/chain-registry/master/zigchain/images/zigchain.png",
           "svg": "https://registry.penumbra.fi/cosmos/chain-registry/master/zigchain/images/zigchain.svg",
           "theme": {
-            "primaryColorHex": "#1fadb1"
+            "primaryColorHex": "#1e1934"
           }
         }
       ]
